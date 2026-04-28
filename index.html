@@ -248,6 +248,23 @@
     color: var(--cream);
   }
 
+  /* ═══ ВОЗРАЖЕНИЕ — особый pullquote с двумя абзацами ═══ */
+  .pullquote.objection .pq-quote {
+    margin-bottom: 26px;
+  }
+  .pullquote.objection .pq-answer {
+    font-style: normal;
+    font-size: clamp(20px, 2vw, 24px);
+    line-height: 1.5;
+    color: var(--cream);
+  }
+  .pullquote.objection .pq-answer .first-word {
+    color: var(--gold-bright);
+    font-style: italic;
+    display: inline-block;
+    margin-bottom: 8px;
+  }
+
   /* ═══ ТРИ СЛОЯ — BEIGE SOFT ═══ */
   .approach {
     background: var(--beige-soft);
@@ -810,15 +827,14 @@
   </div>
 </div>
 
-<!-- ═══ РЕЗУЛЬТАТ ═══ -->
-<div class="pullquote">
+<!-- ═══ ВОЗРАЖЕНИЕ ═══ -->
+<div class="pullquote objection">
   <div class="pullquote-inner">
     <span class="pullquote-star">✦</span>
-    <p>После разбора перестаёшь гнаться за чужим успехом. Потому что видишь свой.</p>
+    <p class="pq-quote">«Сейчас разберусь, что моё —<br>и тогда пойду зарабатывать.»</p>
+    <p class="pq-answer"><span class="first-word">Можно.</span><br>Только «своё» можно искать пять лет — по курсам, наставникам, новым нишам.<br>И всё мимо.<br><br>А карта показывает за час — откуда деньги именно у вас.<br>И какое именно хобби — монетизируется.</p>
   </div>
 </div>
-
-<!-- ═══ ФОРМАТЫ</section>
 
 <!-- ═══ ФОРМАТЫ — PLUM ═══ -->
 <section class="formats-wrap">
